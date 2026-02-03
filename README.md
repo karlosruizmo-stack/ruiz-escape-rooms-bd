@@ -1,1 +1,1 @@
-# ruiz-escape-rooms-bd
+# ruiz-escape-rooms-bd Bon dia joan he utilitzat la teva plantilla de taula per realitzar l'activitat ja que com vas veure la meva taula era horrible doncs he pensat que lo millor a fer era actualitzar la teva seguint el passos y afegints les dades precisses.
