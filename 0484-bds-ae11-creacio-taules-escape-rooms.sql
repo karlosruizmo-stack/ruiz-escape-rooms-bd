@@ -21,7 +21,6 @@ INSERT INTO EQUIPS (nom_equip, data_creacio, qtat_parti) VALUES
 ('Cerebres Atòmics', '2024-01-05', 0);
 
 
--- 2. TAULES AMB DEPENDÈNCIES SIMPLES
 
 -- Inserció en SALES (Referencia a SEUS)
 INSERT INTO SALES (nom_sala, tematica, dificultat, durada_max, max_parti, id_seu) VALUES
@@ -29,9 +28,6 @@ INSERT INTO SALES (nom_sala, tematica, dificultat, durada_max, max_parti, id_seu
 ('El Tresor Pirata', 'Aventura', 'Fàcil', 45, 8, 1),
 ('Laboratori Z', 'Terror', 'Mitjà', 75, 4, 2),
 ('Operació Bunker', 'Bèl·lica', 'Difícil', 90, 5, 3);
-
-
--- 3. TAULES AMB MÚLTIPLES DEPENDÈNCIES I SELECTS
 
 
 -- Relació N-N: EQUIPS_PARTICIPANTS 
@@ -62,4 +58,4 @@ WHERE data_hora = '2024-02-10 18:00:00' AND estat_reserva = 'Realitzada';
 INSERT INTO RESULTATS (temps_utilitzat, exit_fracas, puntuacio, qtat_pistes, id_reserva)
 SELECT 74, 1, 600, 5, id_reserva 
 FROM RESERVES 
-WHERE data_hora = '2024-02-11 10:30:00' AND estat_reserva = 'Realitzada';';
+WHERE data_hora = '2024-02-11 10:30:00' AND estat_reserva = 'Realitzada';
